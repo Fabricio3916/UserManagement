@@ -23,8 +23,8 @@ public class BannedUser {
     @Column(name = "discord_username")
     private String discordUserName;
 
-    @Column(name = "discord_id")
-    private Integer discordId;
+    @Column(name = "discord_id", unique = true)
+    private String discordId;
 
     @Column(name="ban_reason")
     private String banReason;
